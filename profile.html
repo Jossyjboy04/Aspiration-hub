@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Aspiration Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="icon" href="images/logo.png">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="header-container">
+            <a href="index.html" class="logo"><img src="images/logo.png" style="position:absolute;bottom:5px;" width="150px"></a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="profile.html" class="active">Profile</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="#forum">Discussion Forum</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav" id="mobileNav">
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="profile.html" class="active">Profile</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="#forum">Discussion Forum</a></li>
+        </ul>
+    </nav>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="profile-grid">
+            <!-- User Overview -->
+            <div class="card user-overview">
+                <div class="profile-picture-container">
+                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=120&h=120&fit=crop&crop=face" alt="Profile Picture" class="profile-picture" id="profilePicture">
+                    <button class="picture-upload-btn" id="uploadBtn">📷</button>
+                </div>
+                <h1 class="user-name" id="userName">John Doe</h1>
+                <p class="user-bio" id="userBio">I'm a software developer with a passion for learning and growing. Every day is an opportunity to become better.</p>
+                <button class="edit-profile-btn" id="editProfileBtn">Edit Profile</button>
+            </div>
+
+            <!-- Aspirations & Goals -->
+            <div class="card aspirations">
+                <h2>Your Aspirations</h2>
+                <div class="aspirations-grid">
+                    <div class="aspiration-card">
+                        <div class="aspiration-header">
+                            <div class="aspiration-icon">🐍</div>
+                            <div class="aspiration-title">Learn Python Programming</div>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 65%"></div>
+                        </div>
+                        <div class="progress-text">
+                            <span>65% Complete</span>
+                            <span class="status-badge status-in-progress">In Progress</span>
+                        </div>
+                    </div>
+
+                    <div class="aspiration-card">
+                        <div class="aspiration-header">
+                            <div class="aspiration-icon">🚀</div>
+                            <div class="aspiration-title">Start a New Business</div>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 25%"></div>
+                        </div>
+                        <div class="progress-text">
+                            <span>25% Complete</span>
+                            <span class="status-badge status-planned">Planning</span>
+                        </div>
+                    </div>
+
+                    <div class="aspiration-card">
+                        <div class="aspiration-header">
+                            <div class="aspiration-icon">💼</div>
+                            <div class="aspiration-title">Launch Portfolio Website</div>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 100%"></div>
+                        </div>
+                        <div class="progress-text">
+                            <span>100% Complete</span>
+                            <span class="status-badge status-completed">Completed</span>
+                        </div>
+                    </div>
+
+                    <div class="aspiration-card">
+                        <div class="aspiration-header">
+                            <div class="aspiration-icon">📚</div>
+                            <div class="aspiration-title">Master Data Science</div>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 10%"></div>
+                        </div>
+                        <div class="progress-text">
+                            <span>10% Complete</span>
+                            <span class="status-badge status-planned">Just Started</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Account Information -->
+            <div class="card account-info" id="accountInfo">
+                <h2>Account Information</h2>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <label class="info-label">Email Address</label>
+                        <input type="email" class="info-value" value="john.doe@example.com" readonly>
+                    </div>
+                    <div class="info-item">
+                        <label class="info-label">Username</label>
+                        <input type="text" class="info-value" value="johndoe2025" readonly>
+                    </div>
+                    <div class="info-item">
+                        <label class="info-label">Member Since</label>
+                        <input type="text" class="info-value" value="January 15, 2025" readonly>
+                    </div>
+                    <div class="info-item">
+                        <label class="info-label">Learning Categories</label>
+                        <input type="text" class="info-value" value="Technology, Business, Personal Development" readonly>
+                    </div>
+                    <div class="info-item">
+                        <label class="info-label">Notification Preferences</label>
+                        <select class="info-value" disabled>
+                            <option>Email + Push Notifications</option>
+                            <option>Email Only</option>
+                            <option>Push Only</option>
+                            <option>None</option>
+                        </select>
+                    </div>
+                    <div class="info-item">
+                        <label class="info-label">Time Zone</label>
+                        <input type="text" class="info-value" value="UTC+1 (West Africa Time)" readonly>
+                    </div>
+                </div>
+                <div class="edit-actions">
+                    <button class="save-btn" id="saveBtn">Save Changes</button>
+                    <button class="cancel-btn" id="cancelBtn">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-text">© 2025 Aspiration Hub — Empowering Your Journey 🌱</p>
+        </div>
+    </footer>
+
+    <script src="js/profile.js"></script>
+
+</body>
+</html>
