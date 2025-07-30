@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Discussion Topic - Aspiration Hub</title>
+<link rel="stylesheet" href="css/create-post.css">
+<link rel="icon" href="images/logo.png">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="index.html" class="logo"><img src="images/logo.png" style="position:absolute;bottom:5px;" width="150px"></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="discussion-forum.html" class="active">Forum</a></li>
+                    <li><a href="logout.html">Logout</a></li>
+                </ul>
+                <div class="hamburger" onclick="toggleMobileMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-container">
+        <!-- Breadcrumb -->
+        <nav class="breadcrumb">
+            <a href="discussion-forum.html">← Back to Forum</a> • Create New Topic
+        </nav>
+
+        <!-- Page Header -->
+        <section class="page-header">
+            <h1 class="page-title">Create New Discussion Topic</h1>
+            <p class="page-subtitle">
+                Share your thoughts, ask questions, and start meaningful conversations with our community of growth-minded individuals.
+            </p>
+        </section>
+
+        <!-- Form Container -->
+        <section class="form-container">
+            <div class="form-header">
+                <h2 class="form-title">Start a New Discussion</h2>
+                <p class="form-description">
+                    Whether you're looking for advice, sharing insights, or seeking support on your personal growth journey, this is the place to connect with like-minded individuals who understand your aspirations.
+                </p>
+            </div>
+
+            <form id="createPostForm">
+                <!-- Topic Title -->
+                <div class="form-group">
+                    <label class="form-label" for="topicTitle">
+                        Discussion Title<span class="required">*</span>
+                    </label>
+                    <input 
+                        type="text" 
+                        class="input-field" 
+                        id="topicTitle" 
+                        name="topicTitle"
+                        placeholder="Enter a clear, engaging title for your discussion..."
+                        maxlength="100"
+                        required
+                    >
+                    <div class="char-counter" id="titleCounter">0/100 characters</div>
+                    <div class="form-help">
+                        Choose a title that clearly describes your topic and will attract meaningful responses.
+                    </div>
+                </div>
+
+                <!-- Category Selection -->
+                <div class="form-group">
+                    <label class="form-label" for="topicCategory">
+                        Category<span class="required">*</span>
+                    </label>
+                    <select class="input-field select-field" id="topicCategory" name="topicCategory" required>
+                        <option value="">Select a category...</option>
+                        <option value="motivation">🎯 Motivation & Goal Setting</option>
+                        <option value="career">💼 Career Development</option>
+                        <option value="health">🏃‍♂️ Health & Wellness</option>
+                        <option value="relationships">👥 Relationships & Social Skills</option>
+                        <option value="mindfulness">🧘‍♀️ Mindfulness & Mental Health</option>
+                        <option value="productivity">⚡ Productivity & Time Management</option>
+                        <option value="learning">📚 Learning & Skill Development</option>
+                        <option value="finance">💰 Financial Growth</option>
+                        <option value="creativity">🎨 Creativity & Self-Expression</option>
+                        <option value="general">💬 General Discussion</option>
+                    </select>
+                    <div class="form-help">
+                        Selecting the right category helps others find and engage with your discussion.
+                    </div>
+                </div>
+
+                <!-- Post Content -->
+                <div class="form-group">
+                    <label class="form-label" for="postContent">
+                        Your Message<span class="required">*</span>
+                    </label>
+                    <textarea 
+                        class="input-field textarea-field" 
+                        id="postContent" 
+                        name="postContent"
+                        placeholder="Share your thoughts, experiences, questions, or insights... Be authentic and specific to encourage meaningful responses."
+                        maxlength="2000"
+                        required
+                    ></textarea>
+                    <div class="char-counter" id="contentCounter">0/2000 characters</div>
+                    <div class="form-help">
+                        Provide context, share your experience, and be specific about what kind of feedback or discussion you're looking for.
+                    </div>
+                </div>
+
+                <!-- Form Actions -->
+                <div class="form-actions">
+                    <a href="discussion-forum.html" class="cancel-btn">Cancel</a>
+                    <button type="submit" class="submit-btn" id="submitBtn">Post Now</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Tips Section -->
+        <section class="tips-section">
+            <h3 class="tips-title">Tips for Great Discussions</h3>
+            <ul class="tips-list">
+                <li>Be authentic and share your personal experiences</li>
+                <li>Ask specific questions to encourage meaningful responses</li>
+                <li>Use descriptive titles that clearly convey your topic</li>
+                <li>Provide context about your situation or challenge</li>
+                <li>Be respectful and open to different perspectives</li>
+                <li>Follow up with replies to keep the conversation going</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <ul class="footer-links">
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms of Service</a></li>
+            </ul>
+            <p class="copyright">&copy; 2025 Aspiration Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/create-post.js">
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discussion Forum - Aspiration Hub</title>
+    <link rel="stylesheet" href="css/discussion-forum.css"/>
+    <link rel="icon" href="images/logo.png">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="nav-container">
+             <a href="index.html" class="logo"><img src="images/logo.png" style="position:absolute;bottom:5px;" width="150px"></a>
+           
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="discussion-forum.html" class="active">Forum</a></li>
+                    <li><a href="logout.html">Logout</a></li>
+                </ul>
+                <div class="hamburger" onclick="toggleMobileMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-container">
+        <!-- Intro Section -->
+        <section class="intro-section">
+            <h1>Discussion Forum</h1>
+            <p>Join the conversation, share insights, and grow together with our vibrant community of aspiration-driven individuals.</p>
+        </section>
+<form class="ah-search-bar" action="search-results.html" method="GET">
+  <input type="text" name="query" id="ah-search-input" placeholder="Search resources, posts, topics..." required>
+  <button type="submit" id="ah-search-button">🔍</button>
+</form>
+
+        <!-- Forum Topics Section -->
+        <section class="forum-section">
+            <div class="section-header">
+                <h2 class="section-title">Recent Discussions</h2>
+                <a href="create-post.html" class="create-topic-btn">Start New Topic</a>
+            </div>
+
+            <div class="topics-grid">
+                <!-- Sample Topic Cards -->
+                <article class="topic-card">
+                    <h3 class="topic-title">How to Stay Motivated During Challenging Times</h3>
+                    <div class="topic-meta">
+                        <span class="meta-item replies">24 replies</span>
+                        <span class="meta-item author">sarah_wellness</span>
+                        <span class="meta-item timestamp">2 hours ago</span>
+                    </div>
+                    <a href="discussion-thread.html?topic=motivation" class="join-discussion-btn">Join Discussion</a>
+                </article>
+
+                <article class="topic-card">
+                    <h3 class="topic-title">Building Healthy Morning Routines That Actually Stick</h3>
+                    <div class="topic-meta">
+                        <span class="meta-item replies">18 replies</span>
+                        <span class="meta-item author">morning_guru</span>
+                        <span class="meta-item timestamp">4 hours ago</span>
+                    </div>
+                    <a href="discussion-thread.html?topic=morning-routines" class="join-discussion-btn">Join Discussion</a>
+                </article>
+
+                <article class="topic-card">
+                    <h3 class="topic-title">Career Transition Stories: Share Your Journey</h3>
+                    <div class="topic-meta">
+                        <span class="meta-item replies">31 replies</span>
+                        <span class="meta-item author">career_changer</span>
+                        <span class="meta-item timestamp">6 hours ago</span>
+                    </div>
+                    <a href="discussion-thread.html?topic=career-transition" class="join-discussion-btn">Join Discussion</a>
+                </article>
+
+                <article class="topic-card">
+                    <h3 class="topic-title">Mindfulness Techniques for Busy Professionals</h3>
+                    <div class="topic-meta">
+                        <span class="meta-item replies">12 replies</span>
+                        <span class="meta-item author">mindful_alex</span>
+                        <span class="meta-item timestamp">8 hours ago</span>
+                    </div>
+                    <a href="discussion-thread.html?topic=mindfulness" class="join-discussion-btn">Join Discussion</a>
+                </article>
+
+                <article class="topic-card">
+                    <h3 class="topic-title">Setting and Achieving Long-term Goals</h3>
+                    <div class="topic-meta">
+                        <span class="meta-item replies">27 replies</span>
+                        <span class="meta-item author">goal_setter</span>
+                        <span class="meta-item timestamp">1 day ago</span>
+                    </div>
+                    <a href="discussion-thread.html?topic=long-term-goals" class="join-discussion-btn">Join Discussion</a>
+                </article>
+
+                <article class="topic-card">
+                    <h3 class="topic-title">Work-Life Balance: Myth or Reality?</h3>
+                    <div class="topic-meta">
+                        <span class="meta-item replies">41 replies</span>
+                        <span class="meta-item author">balance_seeker</span>
+                        <span class="meta-item timestamp">1 day ago</span>
+                    </div>
+                    <a href="discussion-thread.html?topic=work-life-balance" class="join-discussion-btn">Join Discussion</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta-section">
+            <h2>Have Something to Share?</h2>
+            <p>Start a new discussion and connect with like-minded individuals on your personal growth journey.</p>
+            <a href="create-post.html" class="cta-btn">✨ Create New Topic</a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <ul class="footer-links">
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms of Service</a></li>
+            </ul>
+            <p class="copyright">&copy; 2025 Aspiration Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/discussion-forum.js">
+   
+    </script>
+</body>
+</html>

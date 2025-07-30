@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results - Aspiration Hub</title>
+    <link rel="stylesheet" href="css/search-result.css">
+
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Aspiration Hub</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="discussion-forum.html">Forum</a></li>
+                    <li><a href="logout.html">Logout</a></li>
+                </ul>
+                <div class="hamburger" onclick="toggleMobileMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-container">
+        <!-- Search Header -->
+        <section class="search-header">
+            <h1 class="search-title">Search Results</h1>
+            <p class="search-subtitle">Refine your search or explore the results below</p>
+            <form class="search-form" id="searchForm">
+                <input 
+                    type="text" 
+                    class="search-input" 
+                    placeholder="Search resources, discussions, profiles..."
+                    value="motivation techniques"
+                    id="searchInput"
+                >
+                <button type="submit" class="search-btn" aria-label="Search"></button>
+            </form>
+        </section>
+
+        <!-- Results Summary -->
+        <div class="results-summary">
+            <div class="results-count">
+                Found <span class="search-term">47 results</span> for "motivation techniques"
+            </div>
+            <div class="search-time">Search completed in 0.23 seconds</div>
+        </div>
+
+        <!-- Resources Section -->
+        <section class="results-section">
+            <div class="section-header">
+                <span class="section-icon">📚</span>
+                <h2 class="section-title">Resources</h2>
+                <span class="results-count-badge">12 results</span>
+            </div>
+            
+            <div class="results-grid">
+                <article class="result-card resource">
+                    <div class="result-header">
+                        <div>
+                            <h3 class="result-title">
+                                <a href="resource-detail.html?id=motivation-guide">The Complete Guide to Self-Motivation</a>
+                            </h3>
+                        </div>
+                        <span class="result-type resource">Resource</span>
+                    </div>
+                    <p class="result-description">
+                        A comprehensive guide covering proven motivation techniques, goal-setting strategies, and practical exercises to maintain momentum in your personal and professional life.
+                    </p>
+                    <div class="result-meta">
+                        <span class="meta-item author">Dr. Sarah Johnson</span>
+                        <span class="meta-item date">Updated 3 days ago</span>
+                        <span class="meta-item category">Personal Development</span>
+                        <span class="meta-item level">Beginner</span>
+                    </div>
+                </article>
+
+                <article class="result-card resource">
+                    <div class="result-header">
+                        <div>
+                            <h3 class="result-title">
+                                <a href="resource-detail.html?id=daily-motivation">Daily Motivation Worksheets</a>
+                            </h3>
+                        </div>
+                        <span class="result-type resource">Resource</span>
+                    </div>
+                    <p class="result-description">
+                        Interactive worksheets and templates designed to help you track your motivation levels, identify patterns, and develop personalized strategies for staying motivated.
+                    </p>
+                    <div class="result-meta">
+                        <span class="meta-item author">Mindful Growth Team</span>
+                        <span class="meta-item date">Updated 1 week ago</span>
+                        <span class="meta-item category">Tools & Templates</span>
+                        <span class="meta-item level">All Levels</span>
+                    </div>
+                </article>
+
+                <article class="result-card resource">
+                    <div class="result-header">
+                        <div>
+                            <h3 class="result-title">
+                                <a href="resource-detail.html?id=motivation-psychology">The Psychology Behind Motivation</a>
+                            </h3>
+                        </div>
+                        <span class="result-type resource">Resource</span>
+                    </div>
+                    <p class="result-description">
+                        Deep dive into the scientific research behind motivation, exploring intrinsic vs. extrinsic motivation, reward systems, and how to create lasting behavioral change.
+                    </p>
+                    <div class="result-meta">
+                        <span class="meta-item author">Prof. Michael Chen</span>
+                        <span class="meta-item date">Updated 2 weeks ago</span>
+                        <span class="meta-item category">Psychology</span>
+                        <span class="meta-item level">Advanced</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Forum Posts Section -->
+        <section class="results-section">
+            <div class="section-header">
+                <span class="section-icon">💬</span>
+                <h2 class="section-title">Forum Posts</h2>
+                <span class="results-count-badge">28 results</span>
+            </div>
+            
+            <div class="results-grid">
+                <article class="result-card forum-post">
+                    <div class="result-header">
+                        <div>
+                            <h3 class="result-title">
+                                <a href="discussion-thread.html?topic=motivation-challenges">How to Stay Motivated During Challenging Times</a>
+                            </h3>
+                        </div>
+                        <span class="result-type forum-post">Discussion</span>
+                    </div>
+                    <p class="result-description">
+                        Community discussion about maintaining motivation through difficult periods. Members share personal strategies, success stories, and practical tips for overcoming obstacles.
+                    </p>
+                    <div class="result-meta">
+                        <span class="meta-item author">sarah_wellness</span>
+                        <span class="meta-item date">2 days ago</span>
+                        <span class="meta-item replies">24 replies</span>
+                    </div>
+                </article>
+
+                <article class="result-card forum-post">
+                    <div class="result-header">
+                        <div>
+                            <h3 class="result-title">
+                                <a href="discussion-thread.html?topic=morning-motivation">Morning Motivation Routines That Actually Work</a>
+                            </h3>
+                        </div>
+                        <span class="result-type forum-post">Discussion</span>
+                    </div>
+                    <p class="result-description">
+                        Active discussion about effective morning routines for boosting motivation. Community members share their tried-and-tested morning habits and rituals.
+                    </p>
+                    <div class="result-meta">
+                        <span class="meta-item author">morning_guru</span>
+                        <span class="meta-item date">5 days ago</span>
+                        <span class="meta-item replies">31 replies</span>
+                    </div>
+                </article>
+
+                <article class="result-card forum-post">
+                    <div class="result-header">
+                        <div>
+                            <h3 class="result-title">
+                                <a href="discussion-thread.html?topic=motivation-accountability">Finding Motivation Through Accountability Partners</a>
+                            </h3>
+                        </div>
+                        <span class="result-type forum-post">Discussion</span>
+                    </div>
+                    <p class="result-description">
+                        Discussion about the power of accountability in maintaining motivation. Members discuss how to find and work with accountability partners effectively.
+                    </p>
+                    <div class="result-meta">
+                        <span class="meta-item author">accountability_ace</span>
+                        <span class="meta-item date">1 week ago</span>
+                        <span class="meta-item replies">18 replies</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Profiles Section -->
+        <section class="results-section">
+            <div class="section-header">
+                <span class="section-icon">👥</span>
+                <h2 class="section-title">Profiles</h2>
+                <span class="results-count-badge">7 results</span>
+            </div>
+            
+            <div class="results-grid">
+                <article class="result-card profile">
+                    <div class="result-header">
+                        <div>
+                            <h3 class="result-title">
+                                <a href="profile.html?user=motivation-coach">Alex Thompson - Motivation Coach</a>
+                            </h3>
+                        </div>
+                        <span class="result-type profile">Profile</span>
+                    </div>
+                    <p class="result-description">
+                        Certified life coach specializing in motivation and goal achievement. Author of several motivational guides and active community contributor with expertise in behavioral psychology.
+                    </p>
+                    <div class="result-meta">
+                        <span class="meta-item author">motivation_coach</span>
+                        <span class="meta-item date">Joined 2 years ago</span>
+                        <span class="meta-item category">Life Coach</span>
+                    </div>
+                </article>
+
+                <article class="result-card profile">
+                    <div class="result-header">
+                        <div>
+                            <h3 class="result-title">
+                                <a href="profile.html?user=daily-motivator">Maria Rodriguez - Daily Motivator</a>
+                            </h3>
+                        </div>
+                        <span class="result-type profile">Profile</span>
+                    </div>
+                    <p class="result-description">
+                        Entrepreneur and motivational speaker who shares daily motivation techniques and success strategies. Known for practical, actionable advice that gets results.
+                    </p>
+                    <div class="result-meta">
+                        <span class="meta-item author">daily_motivator</span>
+                        <span class="meta-item date">Joined 1 year ago</span>
+                        <span class="meta-item category">Entrepreneur</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Empty State Example (Hidden by default) -->
+        <section class="results-section" style="display: none;">
+            <div class="section-header">
+                <span class="section-icon">📖</span>
+                <h2 class="section-title">Courses</h2>
+                <span class="results-count-badge">0 results</span>
+            </div>
+            
+            <div class="empty-state">
+                <div class="empty-icon">🔍</div>
+                <h3 class="empty-title">No courses found</h3>
+                <p class="empty-message">Try broadening your search terms or explore our course catalog for related topics.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Floating Action Buttons -->
+    <div class="floating-actions">
+        <a href="dashboard.html" class="floating-btn back-btn" title="Back to Dashboard"></a>
+        <button class="floating-btn new-search-btn" onclick="focusSearch()" title="New Search"></button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <ul class="footer-links">
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms of Service</a></li>
+            </ul>
+            <p class="copyright">&copy; 2025 Aspiration Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/search-result.js">
+        
+    </script>
+</body>
+</html>

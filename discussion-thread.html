@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discussion Thread - Aspiration Hub</title>
+    <link rel="stylesheet" href="css/discussion-thread.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="nav-container">
+             <a href="index.html" class="logo"><img src="images/logo.png" style="position:absolute;bottom:5px;" width="150px"></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="discussion-forum.html" class="active">Forum</a></li>
+                    <li><a href="logout.html">Logout</a></li>
+                </ul>
+                <div class="hamburger" onclick="toggleMobileMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-container">
+        <!-- Breadcrumb -->
+        <nav class="breadcrumb">
+            <a href="discussion-forum.html">← Back to Forum</a> • Discussion Thread
+        </nav>
+
+        <!-- Original Post -->
+        <article class="original-post">
+            <h1 class="topic-title">How to Stay Motivated During Challenging Times</h1>
+            
+            <div class="post-meta">
+                <div class="author-avatar">SW</div>
+                <div class="author-info">
+                    <h4>sarah_wellness</h4>
+                    <span class="timestamp">Posted 2 days ago • 8:30 AM</span>
+                </div>
+            </div>
+            
+            <div class="post-content">
+                <p>Hey everyone! 👋</p>
+                <p>I've been going through a particularly challenging phase in my life lately - work stress, family responsibilities, and personal goals all seem to be pulling me in different directions. I find myself losing motivation and struggling to maintain the positive mindset that usually keeps me going.</p>
+                <p>I'm curious about how others in this community handle these tough periods. What strategies have worked for you when life feels overwhelming? How do you reignite that spark of motivation when everything feels like an uphill battle?</p>
+                <p>I'd love to hear your stories and practical tips. Sometimes knowing that others have walked similar paths and found their way through can be incredibly inspiring.</p>
+                <p>Looking forward to your insights! 💪✨</p>
+            </div>
+            
+            <div class="post-actions">
+                <button class="action-btn" onclick="scrollToReplyForm()">💬 Reply</button>
+                <button class="action-btn secondary" onclick="sharePost()">📤 Share</button>
+            </div>
+        </article>
+
+        <!-- Replies Section -->
+        <section class="replies-section">
+            <h2 class="section-title">Replies (24)</h2>
+            
+            <article class="reply-card">
+                <div class="reply-meta">
+                    <div class="reply-avatar">MG</div>
+                    <div>
+                        <div class="reply-author">morning_guru</div>
+                        <div class="reply-timestamp">1 day ago</div>
+                    </div>
+                </div>
+                <div class="reply-content">
+                    <p>Sarah, I completely understand what you're going through. During my toughest period last year, I discovered that breaking everything down into tiny, manageable steps was a game-changer. Instead of focusing on the overwhelming big picture, I'd just commit to one small action each day.</p>
+                    <p>Also, connecting with my morning routine became my anchor - even when everything else felt chaotic, those 30 minutes of meditation and journaling gave me a sense of control and clarity.</p>
+                </div>
+            </article>
+
+            <article class="reply-card">
+                <div class="reply-meta">
+                    <div class="reply-avatar">RP</div>
+                    <div>
+                        <div class="reply-author">resilient_phoenix</div>
+                        <div class="reply-timestamp">1 day ago</div>
+                    </div>
+                </div>
+                <div class="reply-content">
+                    <p>What helped me was creating a "why" board - a visual reminder of all the reasons I was pushing through the challenges. Photos, quotes, goals written in my own handwriting. When motivation was low, I'd look at it and remember my deeper purpose.</p>
+                    <p>Also, be gentle with yourself. Progress isn't always linear, and that's perfectly okay. 💙</p>
+                </div>
+            </article>
+
+            <article class="reply-card">
+                <div class="reply-meta">
+                    <div class="reply-avatar">JD</div>
+                    <div>
+                        <div class="reply-author">journey_dreamer</div>
+                        <div class="reply-timestamp">18 hours ago</div>
+                    </div>
+                </div>
+                <div class="reply-content">
+                    <p>Community support is everything! Don't underestimate the power of sharing your struggles with trusted friends or family. Sometimes just verbalizing what you're going through can lift a huge weight off your shoulders.</p>
+                    <p>I also started a gratitude practice - writing down 3 things I'm grateful for each night. It helped shift my focus from what was going wrong to what was still going right in my life.</p>
+                </div>
+            </article>
+
+            <article class="reply-card">
+                <div class="reply-meta">
+                    <div class="reply-avatar">MA</div>
+                    <div>
+                        <div class="reply-author">mindful_alex</div>
+                        <div class="reply-timestamp">12 hours ago</div>
+                    </div>
+                </div>
+                <div class="reply-content">
+                    <p>Sarah, your vulnerability in sharing this is already a sign of strength! For me, the key was learning to separate what I could control from what I couldn't. I made two lists and focused my energy only on the "controllable" column.</p>
+                    <p>Physical movement also became crucial - even a 10-minute walk could shift my entire mental state. Movement really is medicine for the mind!</p>
+                </div>
+            </article>
+
+            <article class="reply-card">
+                <div class="reply-meta">
+                    <div class="reply-avatar">SJ</div>
+                    <div>
+                        <div class="reply-author">stronger_jane</div>
+                        <div class="reply-timestamp">8 hours ago</div>
+                    </div>
+                </div>
+                <div class="reply-content">
+                    <p>I love all these responses! Adding my two cents: I found that setting up small "celebration moments" throughout difficult periods helped maintain motivation. Acknowledging even tiny wins with something I enjoyed - a special tea, a favorite song, or a call with a friend.</p>
+                    <p>These micro-celebrations reminded me that progress was happening, even when it didn't feel significant.</p>
+                </div>
+            </article>
+        </section>
+
+        <!-- Reply Form -->
+        <section class="reply-form-section">
+            <h3 class="form-title">Add Your Reply</h3>
+            <form id="replyForm">
+                <div class="form-group">
+                    <label class="form-label" for="replyText">Share your thoughts and experiences:</label>
+                    <textarea 
+                        class="form-textarea" 
+                        id="replyText" 
+                        placeholder="Share your motivation strategies, personal experiences, or words of encouragement..."
+                        required
+                    ></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Post Reply</button>
+            </form>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta-section">
+            <h2>Keep the Conversation Going</h2>
+            <p>Explore more inspiring discussions and connect with our community of growth-minded individuals.</p>
+            <a href="discussion-forum.html" class="cta-btn">🌟 Browse More Topics</a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <ul class="footer-links">
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms of Service</a></li>
+            </ul>
+            <p class="copyright">&copy; 2025 Aspiration Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/discussion-thread.js">
+        
+    </script>
+</body>
+</html>
